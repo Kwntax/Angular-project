@@ -1,0 +1,15 @@
+.dashboard{
+    height: 100%;
+    width: 85%;
+    background-color: rgb(165, 153, 153);
+    
+}
+
+.navigation-menu{
+    position: fixed;
+    height: 100%;
+    width:25%;
+    background-color: red;
+    left:0;
+    top:0;
+}
