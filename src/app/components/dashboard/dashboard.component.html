@@ -33,6 +33,16 @@
 
     <div class="main-content"> 
 
+        <header>
+            <div id="user-icon" class="user-icon"></div>
+        </header>
+
         <h1> Dashboard </h1>
+
+        <div class="chart-container">
+            <div class="chart-wrapper">
+                <canvas baseChart width="600px" height="400px" type="line" [data]="lineChartdata"></canvas>
+            </div>
+        </div>
     </div>
 

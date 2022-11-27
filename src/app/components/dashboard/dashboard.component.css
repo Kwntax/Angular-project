@@ -14,23 +14,23 @@ body{
 }
 
 .sidebar-brand .fa-heartPulse{
-    flex: 0.5;
+    flex: 0.8;
     color:white;
     margin: auto;
 }
 
 .main-content{
     margin-left: 330px;
-    height: 100%;
-    width: 1015px;
-    background-color:rgb(255, 255, 255);
+    height: 1024px;
+    width: 1110px;
+    background-color:rgb(247, 245, 245);
 }
 
 .brand{
     flex: 2;
     color:white;
     font-family: 'Inter';
-    font-size: 25px;
+    font-size: 35px;
     margin:auto
 }
 
@@ -48,9 +48,9 @@ body{
     text-align: center;
     margin-top: 100px;
     width: 250px; 
-
     flex-direction: column;
-    color: white
+    color: white;
+    margin-left: 50px;
 }
 
 .nav .fa-heartPulse{
@@ -60,11 +60,48 @@ body{
 .nav li {
     display: flex;
     flex-direction: row;
-    margin: 15px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 221px;
+}
+
+.nav li:hover{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:rgb(161, 67, 67);
+    background-color:rgb(247, 245, 245);
+    border-radius: 30px 0px 0px 30px;
 }
 
 .nav li span{
-    flex: 0.5;
+    flex: 0.6;
     font-size: 20px; 
 }
 
+.user-icon{
+    margin: 40px;
+    margin-right: 100px;
+    width: 62px;
+    height: 62px;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    float: right;
+}
+
+header{
+    height: 80px;
+}
+
+
+.chart-wrapper{
+    width: 600px;
+    height: 400px;
+    margin: 50px;
+    background-color: aliceblue;
+    box-shadow: 0px 0.5px 5px 0.1px;    
+}
+
+.main-content h1{
+    margin: 25px;
+}

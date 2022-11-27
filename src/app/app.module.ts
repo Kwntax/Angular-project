@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { UserService } from './services/user.service';
+import { NgChartsModule } from 'ng2-charts';
+//import { NgxChartsModule } from '@swimlane/ngx-charts'
+
+
 
 @NgModule({
   declarations: [
@@ -16,9 +21,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgChartsModule,
+    //NgxChartsModule
+    NgChartsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
