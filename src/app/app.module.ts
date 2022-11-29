@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UserService } from './services/user.service';
 import { NgChartsModule } from 'ng2-charts';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 //import { NgxChartsModule } from '@swimlane/ngx-charts'
 
 
@@ -15,7 +16,8 @@ import { NgChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { NgChartsModule } from 'ng2-charts';
     FontAwesomeModule,
     NgChartsModule,
     //NgxChartsModule
-    NgChartsModule
+    NgChartsModule,
+    AppRoutingModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

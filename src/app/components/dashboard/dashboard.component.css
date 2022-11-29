@@ -75,8 +75,8 @@ body{
 }
 
 .nav li span{
-    flex: 0.6;
     font-size: 20px; 
+    margin-left: 10px;
 }
 
 .user-icon{
@@ -104,4 +104,14 @@ header{
 
 .main-content h1{
     margin: 25px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+header h2{
+    margin: 50px;
+    float: right;
 }
