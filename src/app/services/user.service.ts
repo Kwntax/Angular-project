@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-
-interface User{
+import { HttpClient } from '@angular/common/http';
+import {Observable} from 'rxjs';
+export interface User{
   id: number;
   name: string;
   age: number;
@@ -14,12 +15,19 @@ interface User{
   updated_at: Date;
 }
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-  private data: User[] = [];
 
+  constructor( private http: HttpClient){
 
+  }
+
+  public getData(){
+  return this.http.get<User>('http://127.0.0.1:8000/api/userprofiles/partner/1')
+
+  }
 }

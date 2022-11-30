@@ -10,6 +10,7 @@ import { UserService } from './services/user.service';
 import { NgChartsModule } from 'ng2-charts';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 //import { NgxChartsModule } from '@swimlane/ngx-charts'
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -27,7 +28,8 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     NgChartsModule,
     //NgxChartsModule
     NgChartsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

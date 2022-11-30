@@ -114,8 +114,14 @@ a:link, a:visited, a:hover, a:active {
 }
 
 header h2{
-    margin: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
     float: right;
+    font-size: 24px;
+}
+
+h1{
+    font-size: 36px;
 }
 
 .card-wrapper{
@@ -166,12 +172,12 @@ header h2{
     flex-wrap: wrap;
     height:229px;
     border-radius: inherit;
+    justify-content: center;
 }
 
 .card-info{
     display: flex;
     flex-direction: column;
-    margin: 5px;
     width: 120px;
     height: 100px;
 }
@@ -187,6 +193,7 @@ header h2{
     color: aliceblue;
 }
 
+
 .card-info .value{
     display: flex;
     flex-direction: column;
@@ -194,4 +201,9 @@ header h2{
     margin: auto;
     font-size: 36px;
     color: aliceblue;
+    
+}
+
+#card1 .card-info .value .blood_pressure{
+    color:red;
 }

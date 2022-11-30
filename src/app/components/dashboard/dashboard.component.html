@@ -17,7 +17,7 @@
             <li>
                 <a>
                     <fa-icon [icon]="faHome" size="lg" class="fa-heartPulse"></fa-icon>
-                    <span>Dashboard</span>
+                    <span>Patient</span>
                 </a>
             </li>
             <li>
@@ -44,9 +44,9 @@
     <div class="main-content"> 
 
         <header>
-            <div id="user-icon" class="user-icon"></div>
+            <img id="user-icon" class="user-icon" [src]="doctors[0].profile_picture" >
 
-            <h2>Template</h2>
+            <h2>Welcome {{doctors[0].name}}</h2>
         </header>
 
         <h1> Dashboard </h1>
@@ -55,60 +55,54 @@
 
             <div class="card">
                 <div class="card-image-wrapper">
-                    <img class="card-image" src="https://randomuser.me/api/portraits/men/27.jpg" alt="">
+                    <img class="card-image" [src]="users[0].profile_picture" alt="">
                 </div>
-                <h2>Name</h2>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                        <div class="value">?</div>
+                <h2>{{users[0].name}}</h2>
+                <div class="card-info-wrapper" id="card1" >
+                    <div class="card-info ">
+                        <div class="value oxygen">{{health[0].oxygen}}</div>
                         <div class="title">Oxygen</div>
                     </div>
-                    <div class="card-info">
-                        <div class="value">?</div>
+                    <div class="card-info ">
+                        <div class="value moisture">{{health[0].moisture}}</div>
                         <div class="title">Water</div>
                     </div>
-                    <div class="card-info">
-                        <div class="value">?</div>
+                    <div class="card-info ">
+                        <div class="value bpm">{{health[0].beats_per_minute}}</div>
                         <div class="title">BPM</div>
                     </div>
-                    <div class="card-info">
-                        <div class="value">?</div>
-                        <div class="title">Heart rate</div>
+                    <div class="card-info ">
+                        <div class="value blood_pressure">{{health[0].blood_pressure}}</div>
+                        <div class="title">Blood pressure</div>
                     </div>
+
                     
                 </div>
+
 
             </div>
 
             <div class="card">
                 <div class="card-image-wrapper">
-                    <img class="card-image" src="https://randomuser.me/api/portraits/men/27.jpg" alt="">
+                    <img class="card-image" [src]="users[1].profile_picture"  alt="">
                 </div>
-                <h2>Name</h2>
-                <div class="card-info-wrapper">
+                <h2>{{users[1].name}}</h2>
+                <div class="card-info-wrapper" id="card2">
                     <div class="card-info">
-                        <div class="value">
-
-                        </div>
+                        <div class="value">{{health[1].oxygen}}</div>
                         <div class="title">Oxygen</div>
                     </div>
                     <div class="card-info">
-                        <div class="value">
-
-                        </div>
+                        <div class="value">{{health[1].moisture}}</div>
                         <div class="title">Water</div>
                     </div>
                     <div class="card-info">
-                        <div class="value">
-
-                        </div>
+                        <div class="value">{{health[1].beats_per_minute}}</div>
                         <div class="title">BPM</div>
                     </div>
                     <div class="card-info">
-                        <div class="value">
-
-                        </div>
-                        <div class="title">Heart rate</div>
+                        <div class="value">{{health[1].blood_pressure}}</div>
+                        <div class="title">Blood pressure</div>
                     </div>
                     
                 </div>
@@ -119,33 +113,25 @@
 
             <div class="card">
                 <div class="card-image-wrapper">
-                    <img class="card-image" src="https://randomuser.me/api/portraits/men/27.jpg" alt="">
+                    <img class="card-image" [src]="users[2].profile_picture"  alt="">
                 </div>
-                <h2>Name</h2>
-                <div class="card-info-wrapper">
+                <h2>{{users[2].name}}</h2>
+                <div class="card-info-wrapper" id="card3">
                     <div class="card-info">
-                        <div class="value">
-
-                        </div>
+                        <div class="value">{{health[2].oxygen}}</div>
                         <div class="title">Oxygen</div>
                     </div>
                     <div class="card-info">
-                        <div class="value">
-
-                        </div>
+                        <div class="value">{{health[2].moisture}}</div>
                         <div class="title">Water</div>
                     </div>
                     <div class="card-info">
-                        <div class="value">
-
-                        </div>
+                        <div class="value">{{health[2].beats_per_minute}}</div>
                         <div class="title">BPM</div>
                     </div>
                     <div class="card-info">
-                        <div class="value">
-
-                        </div>
-                        <div class="title">Heart rate</div>
+                        <div class="value">{{health[2].blood_pressure}}</div>
+                        <div class="title">Blood pressure</div>
                     </div>
                     
                 </div>
@@ -156,29 +142,28 @@
             
             <div class="card">
                 <div class="card-image-wrapper">
-                    <img class="card-image" src="https://randomuser.me/api/portraits/men/27.jpg" alt="">
+                    <img class="card-image" [src]="users[3].profile_picture"  alt="">
                 </div>
-                <h2>Name</h2>
-                <div class="card-info-wrapper">
+                <h2>{{users[3].name}}</h2>
+                <div class="card-info-wrapper" id="card4">
                     <div class="card-info">
-                        <div class="value"> ? </div>
+                        <div class="value">{{health[3].oxygen}}</div>
                         <div class="title">Oxygen</div>
                     </div>
                     <div class="card-info">
-                        <div class="value">?</div>
+                        <div class="value">{{health[3].moisture}}</div>
                         <div class="title">Water</div>
                     </div>
                     <div class="card-info">
-                        <div class="value">?</div>
+                        <div class="value">{{health[3].beats_per_minute}}</div>
                         <div class="title">BPM</div>
                     </div>
                     <div class="card-info">
-                        <div class="value">?</div>
-                        <div class="title">Heart rate</div>
+                        <div class="value">{{health[3].blood_pressure}}</div>
+                        <div class="title">Blood pressure</div>
                     </div>
                     
                 </div>
-
             </div>
 
         </div>
