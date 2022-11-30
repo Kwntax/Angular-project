@@ -24,7 +24,6 @@ body{
 .main-content{
     margin-left: 330px;
     height: 1024px;
-    width: 1110px;
     background-color:rgb(247, 245, 245);
 }
 
@@ -49,7 +48,7 @@ body{
     display: flex;
     text-align: center;
     margin-top: 100px;
-    width: 250px; 
+    
     flex-direction: column;
     color: white;
     margin-left: 50px;
@@ -126,7 +125,6 @@ h1{
 
 .card-wrapper{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 1110px;
     margin-left: 100px;
@@ -204,6 +202,123 @@ h1{
     
 }
 
-#card1 .card-info .value .blood_pressure{
-    color:red;
+
+.btn{
+    margin-left: 50px;
+    height: 70px;
+    width: 120px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #4346A1;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3;
+    -webkit-transition-property: box-shadow,transform;
+    transition-property: box-shadow,transform;;
+
 }
+
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .main-content{
+        width: 400ox;
+    }
+
+    .card-wrapper{
+        width: 400ox;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navigation-menu{
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    .nav{
+        width: 200px;
+    }
+
+    .sidebar-brand{
+        width: 150px;
+    }
+
+    header{
+        width: 400px;
+    }
+
+
+
+}
+
+@media (min-width: 769px){
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-content{
+        width: 700px;
+    }
+
+    .card-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 710px;
+        margin-left: 50px;
+    }
+    
+    .navigation-menu{
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    .nav{
+        width: 300px;
+    }
+
+    .sidebar-brand{
+        width: 220px;
+    }
+
+    header{
+        width: 700px;
+    }
+
+
+
+}
+
+
+
+
+@media (min-width: 1440px) {
+    .main-content{
+        width: 1110px;
+    }
+
+    .card-wrapper{
+        width: 1110px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav{
+        width: 250px; 
+    }
+
+
+}
+
+

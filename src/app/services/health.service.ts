@@ -34,7 +34,7 @@ export class HealthService {
     {
       "id": 1,
       "beats_per_minute": 70,
-      "blood_pressure": 125,
+      "blood_pressure": 80,
       "moisture": 90,
       "oxygen": 98,
     },

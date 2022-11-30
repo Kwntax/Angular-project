@@ -51,14 +51,18 @@
 
         <h1> Dashboard </h1>
 
+        <button (click)="bloodPressureUp()" class="btn"> High blood pressure </button>
+
+        <button (click)="bloodPressureLow()" class="btn"> Normal blood pressure </button>
+
         <div class="card-wrapper">
 
-            <div class="card">
+            <div class="card" id="card1" >
                 <div class="card-image-wrapper">
                     <img class="card-image" [src]="users[0].profile_picture" alt="">
                 </div>
                 <h2>{{users[0].name}}</h2>
-                <div class="card-info-wrapper" id="card1" >
+                <div class="card-info-wrapper" >
                     <div class="card-info ">
                         <div class="value oxygen">{{health[0].oxygen}}</div>
                         <div class="title">Oxygen</div>

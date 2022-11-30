@@ -53,11 +53,12 @@ export class DashboardComponent implements OnInit{
     //this.getHealthData();
     this.getDoctorsData();
     this.getRecommended();
-
-    if(this.healthData[0].blood_pressure>120){
-      const card1 = document.getElementById('card-1');
+    blood_pressure = this.healthData[0].blood_pressure;
+    console.log(blood_pressure)
+    if(blood_pressure>120){
+      const card1 = document.getElementById('card1');
       if (card1!==null){
-        card1.style.color='red';
+        card1.style.backgroundColor = '#972F2F';
       }
     }
 
@@ -103,4 +104,40 @@ export class DashboardComponent implements OnInit{
   });
   
 }
+
+  bloodPressureUp(){
+    console.log('bloodPressureUp initialized')
+    blood_pressure=125;
+    this.healthData[0].blood_pressure = blood_pressure;
+    if(blood_pressure>120){
+      const card1 = document.getElementById('card1');
+      if (card1!==null){
+        card1.style.backgroundColor = '#972F2F';
+      }
+    } else {
+      const card1 = document.getElementById('card1');
+      if (card1!==null){
+        card1.style.backgroundColor = '';
+      }
+    }
+  }
+
+  bloodPressureLow(){
+    console.log('bloodPressureUp initialized')
+    blood_pressure=80;
+    this.healthData[0].blood_pressure = blood_pressure;
+    if(blood_pressure>120){
+      const card1 = document.getElementById('card1');
+      if (card1!==null){
+        card1.style.backgroundColor = '#972F2F';
+      }
+    } else {
+      const card1 = document.getElementById('card1');
+      if (card1!==null){
+        card1.style.backgroundColor = '';
+      }
+    }
+  }
+
+
 }
