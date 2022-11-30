@@ -1,3 +1,5 @@
+/*Azul 4346A1*/
+
 body{
     margin:0;
     padding:0;
@@ -36,9 +38,9 @@ body{
 
 .navigation-menu{
     position: fixed;
-    height: 1024px;
+    height: 100%;
     width:330px;
-    background-color: rgb(161, 67, 67);
+    background-color: #4346A1;
     left:0;
     top:0;
 }
@@ -69,7 +71,7 @@ body{
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    color:rgb(161, 67, 67);
+    color:#4346A1;
     background-color:rgb(247, 245, 245);
     border-radius: 30px 0px 0px 30px;
 }
@@ -114,4 +116,82 @@ a:link, a:visited, a:hover, a:active {
 header h2{
     margin: 50px;
     float: right;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1110px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+
+}
+
+.card{
+    width: 271px;
+    height: 391px;
+    background-color: #4346A1;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.card-image-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    border-radius: inherit;
+    justify-content: center;
+}
+
+.card h2{
+    text-align: center;
+    color: aliceblue;
+    margin: 2px;
+}
+
+.card-image{
+    display: block;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: #4346A1;
+    margin: auto;
+}
+
+.card-info-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:229px;
+    border-radius: inherit;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 120px;
+    height: 100px;
+}
+
+.card-info .value{
+    flex: 2;
+
+}
+
+.card-info .title{
+    flex: 0.5;
+    text-align: center;
+    color: aliceblue;
+}
+
+.card-info .value{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    font-size: 36px;
+    color: aliceblue;
 }
