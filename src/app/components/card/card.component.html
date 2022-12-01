@@ -1,0 +1,30 @@
+
+
+<div class="card" id="card{{usersInput.id}}" >
+    <div class="card-image-wrapper">
+        <img class="card-image" [src]="usersInput.profile_picture" alt="">
+    </div>
+    <h2>{{usersInput.name}}</h2>
+    <div class="card-info-wrapper" >
+        <div class="card-info ">
+            <div class="value oxygen">{{lastElement.oxygen}}</div>
+            <div class="title">Oxygen</div>
+        </div>
+        <div class="card-info ">
+            <div class="value moisture">{{lastElement.moisture}}</div>
+            <div class="title">Blood_rate</div>
+        </div>
+        <div class="card-info ">
+            <div class="value bpm">{{lastElement.beats_per_minute}}</div>
+            <div class="title">BPM</div>
+        </div>
+        <div class="card-info ">
+            <div class="value blood_pressure">{{lastElement.blood_pressure}}</div>
+            <div class="title">Blood pressure</div>
+        </div>
+
+        
+    </div>
+
+
+</div>

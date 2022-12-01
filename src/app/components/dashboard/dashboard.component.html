@@ -57,6 +57,8 @@
 
         <div class="card-wrapper">
 
+            <app-card *ngFor="let item of users" [usersInput]="item"></app-card>
+<!--
             <div class="card" id="card1" >
                 <div class="card-image-wrapper">
                     <img class="card-image" [src]="users[0].profile_picture" alt="">
@@ -169,7 +171,7 @@
                     
                 </div>
             </div>
-
+-->
         </div>
     </div>
 

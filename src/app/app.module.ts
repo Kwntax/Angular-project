@@ -11,6 +11,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 //import { NgxChartsModule } from '@swimlane/ngx-charts'
 import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     DashboardComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
