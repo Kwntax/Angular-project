@@ -1,0 +1,10 @@
+.modal{
+    width: 1500px;
+    height: 700px;
+}
+
+.chart-wrapper{
+    width:300px;
+    height: 200px;
+    margin: 10px;
+}

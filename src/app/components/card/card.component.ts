@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HealthService, Health } from 'src/app/services/health.service';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import { ModalpopupcomponentComponent } from '../modalpopupcomponent/modalpopupcomponent.component';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -9,7 +11,7 @@ export class CardComponent implements OnInit{
   
   health:any;
   lastElement:any;
-  constructor(private HealthService:HealthService) { }
+  constructor(private HealthService:HealthService, private dialog:MatDialog ) { }
 
   @Input() usersInput:any;
 
@@ -19,7 +21,7 @@ export class CardComponent implements OnInit{
     this.getHealthData();
     setInterval(()=>{
       this.getHealthData();
-    },5000);
+    },10000);
   }
 
 
@@ -33,5 +35,11 @@ export class CardComponent implements OnInit{
     });
   
    }
+
+   OpenPopUp(){
+    this.dialog.open(ModalpopupcomponentComponent)
+   }
+
+   
 
 }

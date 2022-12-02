@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {MatDialogModule} from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -12,7 +12,9 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 //import { NgxChartsModule } from '@swimlane/ngx-charts'
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './components/card/card.component';
+import { ModalpopupcomponentComponent } from './components/modalpopupcomponent/modalpopupcomponent.component';
 
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { CardComponent } from './components/card/card.component';
     AppComponent,
     DashboardComponent,
     PagenotfoundComponent,
-    CardComponent
+    CardComponent,
+    ModalpopupcomponentComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,9 @@ import { CardComponent } from './components/card/card.component';
     //NgxChartsModule
     NgChartsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatButtonModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
