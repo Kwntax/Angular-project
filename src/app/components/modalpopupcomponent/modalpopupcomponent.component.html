@@ -4,22 +4,34 @@
 
     <div class="chart-wrapper"> 
         <canvas baseChart 
+        [title]="title"
         [type]="'line'"
-        [data]="lineChartData"
+        [data]="lineChartDataOxygen"
         [options]="lineChartOptions"
-        [legend]="lineChartLegend"> 
-        ></canvas>
-    </div>
-
-    <div class="chart-wrapper">
+        [legend]="lineChartLegend" class="chart"> 
+        </canvas>
         <canvas baseChart 
+        [title]="title"
         [type]="'line'"
-        [data]="lineChartData"
+        [data]="lineChartDataBloodRate"
         [options]="lineChartOptions"
-        [legend]="lineChartLegend"> 
+        [legend]="lineChartLegend" class="chart"> 
+        ></canvas>
+        <canvas baseChart 
+        [title]="title"
+        [type]="'line'"
+        [data]="lineChartDataBloodPressure"
+        [options]="lineChartOptionsBP"
+        [legend]="lineChartLegend" class="chart"> 
+        ></canvas>
+        <canvas baseChart 
+        [title]="title"
+        [type]="'line'"
+        [data]="lineChartDataBPM"
+        [options]="lineChartOptionsBPM"
+        [legend]="lineChartLegend" class="chart"> 
         ></canvas>
     </div>
-
 
 </div>
 

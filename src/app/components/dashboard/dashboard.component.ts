@@ -8,6 +8,7 @@ import { Health, HealthService } from 'src/app/services/health.service';
 import { DoctorService } from 'src/app/services/doctor.service';
 import { RecommendedValuesService } from 'src/app/services/recommended-values.service';
 import { map } from 'rxjs/operators'
+import { ToastrService } from 'ngx-toastr';
 
 var moisture: number;
 var oxygen: number;
@@ -29,6 +30,7 @@ export class DashboardComponent implements OnInit{
   health:any[];
   doctors:any;
   recommended:any;
+  lastElement:any;
 
   data:any[]=[];
 
@@ -38,7 +40,8 @@ export class DashboardComponent implements OnInit{
   constructor( private UserService: UserService,
      private HealthService: HealthService,
      private DoctorService: DoctorService,
-     private RecommendedValuesService: RecommendedValuesService){}
+     private RecommendedValuesService: RecommendedValuesService,
+     private toast:ToastrService){}
 
 
   
@@ -105,20 +108,7 @@ export class DashboardComponent implements OnInit{
 }
 
   bloodPressureUp(){
-    console.log('bloodPressureUp initialized')
-    blood_pressure=125;
-    this.health[0].blood_pressure = blood_pressure;
-    if(blood_pressure>120){
-      const card1 = document.getElementById('card1');
-      if (card1!==null){
-        card1.style.backgroundColor = '#972F2F';
-      }
-    } else {
-      const card1 = document.getElementById('card1');
-      if (card1!==null){
-        card1.style.backgroundColor = '';
-      }
-    }
+    this.toast.success('Click to send him a message','Warning');
   }
 
   bloodPressureLow(){

@@ -1,10 +1,12 @@
-.modal{
-    width: 1500px;
-    height: 700px;
-}
 
 .chart-wrapper{
-    width:300px;
-    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chart-wrapper .chart{
+    width: 45%;
+    height: 50%;
     margin: 10px;
 }

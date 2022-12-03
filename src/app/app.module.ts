@@ -13,7 +13,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './components/card/card.component';
 import { ModalpopupcomponentComponent } from './components/modalpopupcomponent/modalpopupcomponent.component';
-
+import { ToastrModule } from 'ngx-toastr';
 import {MatButtonModule} from '@angular/material/button';
 
 
@@ -37,6 +37,9 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     MatDialogModule,
     MatButtonModule,
+    ToastrModule.forRoot({
+      
+    })
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
